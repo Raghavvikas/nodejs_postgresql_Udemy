@@ -18,9 +18,6 @@ app.get("/", (req, res) => {
 // dynamic routing by identifying Parameters
 
 app.get("/movies/:movie/year/:year", (req, res) => {
-  console.log("Requested Movie Name is :" + req.params.movie);
-  console.log("Requested Movie Year is :" + req.params.year);
-
   res.send(
     "Movie : " +
       req.params.movie.toLocaleUpperCase() +
